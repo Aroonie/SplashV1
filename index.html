@@ -35,17 +35,13 @@
         <audio id="stream"></audio>
         <div class="player-box">
             <div class="player-bg">
-                <!--<img src="https://i.imgur.com/wgIduyg.png" draggable="false" alt="">-->
-                <img src="https://i.imgur.com/krFFnRD.png" draggable="false" alt="">
+                <img src="https://i.imgur.com/wgIduyg.png" draggable="false" alt="">
             </div>
             <div class="player-contents">
                 <div class="songstats songstats1">
                     <div class="song-info">
-                      <p class="title"></p>
-                      <p class="artist"></p>
-                      <!--<p class="dj"></p>-->
                     </div>
-                    <img class="circled-image actual-song-art ml-4 d-none d-md-inline-block" src="" draggable="false">
+                    <img class="circled-image" src="" draggable="false">
                 </div>
                 <div class="player-controls">
                     <div class="controls-container"></div>
@@ -81,11 +77,10 @@
     <script src="assets/js/api.js"></script>
 <!--=============================================================================-->
 </body>
-<widgetbot class="discord-widget"
-    server="757969418096476270"
-    channel="757969615065317538"
-    width="400"
-    height="400"
-></widgetbot>
-<script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+    new Crate({
+      server: '757969418096476270', // DreamFM Radio
+      channel: '757969418096476273' // #general
+    })
+</script>
 </html>
