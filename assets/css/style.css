@@ -1,12 +1,5 @@
 * {
-  box-sizing: border-box;
   transition: 0.3s ease-out !important;
-}
-
-html, body {
-  position: relative;
-  overflow-x: hidden;
-  /*background-image: url(https://i.imgur.com/N5lEaIv.jpg);*/
 }
 
 .background {
@@ -31,13 +24,17 @@ html, body {
     min-height: calc(100% + 4px);
 }
 
+.player {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .player-box {
     position: relative;
     width: 597px;
     height: 198px;
-    left: 675px;
-    top: 350px;
-    display: inline-block;
+    bottom: -375px;
     border-radius: 45px;
     box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.25);
 }
